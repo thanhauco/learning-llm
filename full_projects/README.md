@@ -1,59 +1,68 @@
 # Full Production Projects
 
-Complete end-to-end projects that integrate all concepts from the learning modules.
+Three comprehensive projects that integrate all concepts from the learning modules.
 
 ## Projects
 
 ### 1. Enterprise RAG System (`enterprise_rag/`)
-A production-ready RAG system with:
-- Multi-tenant document management
+**Complexity: Advanced**
+
+A production-ready RAG system for customer support with:
+- Multi-source document ingestion (PDF, web, API)
 - Hybrid search (semantic + keyword)
 - Re-ranking and query expansion
-- Cost tracking and rate limiting
-- Observability and monitoring
+- Caching and rate limiting
+- Cost tracking and observability
 - Guardrails and content moderation
 
-**Covers:** Tokenization, embeddings, RAG, caching, evaluation, production patterns
+**Covers:** Tokenization, embeddings, RAG, caching, evaluation, production monitoring
 
-### 2. Fine-tuned Customer Support Bot (`customer_support_bot/`)
-A specialized chatbot with:
-- LoRA fine-tuning on support tickets
+---
+
+### 2. Fine-Tuned Code Assistant (`code_assistant/`)
+**Complexity: Expert**
+
+A specialized coding assistant with:
+- LoRA fine-tuning on code datasets
 - 4-bit quantization for efficiency
-- RAG for knowledge base integration
-- Prompt engineering patterns
-- PII detection and redaction
-- Performance monitoring
-
-**Covers:** Fine-tuning, quantization, LoRA, RAG vs fine-tuning, guardrails, privacy
-
-### 3. Code Assistant with Semantic Cache (`code_assistant/`)
-An intelligent code helper with:
-- Semantic caching for repeated queries
 - Context-aware code completion
-- Multi-file code understanding
+- RAG over documentation
+- Prompt engineering patterns
 - Latency optimization (<500ms)
-- Token budget management
-- JSON schema validation
 
-**Covers:** Caching strategies, latency optimization, attention mechanisms, prompt engineering
+**Covers:** Fine-tuning, LoRA/QLoRA, quantization, RAG, prompt engineering, latency optimization
 
-### 4. Document Intelligence Platform (`document_intelligence/`)
-Process and analyze documents at scale:
-- Batch processing pipeline
-- Multiple chunking strategies
-- Vector database integration (Pinecone, Chroma)
+---
+
+### 3. Multi-Agent LLM System (`multi_agent_system/`)
+**Complexity: Expert**
+
+An orchestrated multi-agent system for complex tasks:
+- Agent routing and orchestration
+- Specialized agents (research, code, analysis)
+- Shared KV cache across agents
+- Rate-limit aware scheduling
 - RAGAS evaluation framework
-- Adversarial prompt testing
-- Cost optimization
+- Privacy-preserving data flows
 
-**Covers:** All RAG concepts, evaluation, quality control, systems thinking
+**Covers:** All concepts - attention mechanisms, RAG, fine-tuning, caching, rate limiting, evaluation, security
 
-## Running the Projects
+---
 
-Each project has its own README with setup instructions and architecture details.
+## Setup
+
+Each project has its own README with:
+- Architecture overview
+- Setup instructions
+- Configuration options
+- Usage examples
+- Performance benchmarks
+
+## Running Projects
 
 ```bash
 cd full_projects/<project_name>
 pip install -r requirements.txt
+cp .env.example .env  # Add your API keys
 python main.py
 ```
