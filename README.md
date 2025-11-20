@@ -11,6 +11,11 @@ A comprehensive, hands-on learning path from basics to production-ready LLM syst
 04_systems_thinking/    - Latency, caching, rate limiting
 05_quality_control/     - Prompt engineering, evaluation, testing
 06_production/          - Guardrails, security, observability
+07_distributed_training/ - Ray, DeepSpeed, FSDP, multi-GPU training
+08_inference_optimization/ - vLLM, TGI, TensorRT-LLM, continuous batching
+09_fast_finetuning/     - Unsloth, Axolotl, Flash Attention optimization
+10_mlops_deployment/    - BentoML, Modal, Replicate, serverless deployment
+full_projects/          - 3 complete production-ready applications
 ```
 
 ## Setup
