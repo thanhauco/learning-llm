@@ -1,68 +1,61 @@
-# Full Production Projects
+# Full Projects - Real-World LLM Applications
 
-Three comprehensive projects that integrate all concepts from the learning modules.
+These projects integrate all concepts from sections 01-06 into production-ready applications.
 
 ## Projects
 
-### 1. Enterprise RAG System (`enterprise_rag/`)
-**Complexity: Advanced**
+### 1. Enterprise RAG System
+**Complexity:** Advanced  
+**Covers:** RAG, embeddings, caching, monitoring, guardrails
 
-A production-ready RAG system for customer support with:
-- Multi-source document ingestion (PDF, web, API)
-- Hybrid search (semantic + keyword)
-- Re-ranking and query expansion
-- Caching and rate limiting
-- Cost tracking and observability
-- Guardrails and content moderation
+A production-grade RAG system for enterprise document Q&A with:
+- Semantic chunking and hybrid search
+- Re-ranking with cross-encoders
+- Semantic caching for performance
+- PII detection and content moderation
+- Comprehensive monitoring and evaluation
+- Rate limiting and error handling
 
-**Covers:** Tokenization, embeddings, RAG, caching, evaluation, production monitoring
+**Use cases:** Customer support, internal knowledge base, legal document search
 
----
+### 2. AI Code Assistant
+**Complexity:** Advanced  
+**Covers:** Embeddings, RAG, quantization, prompt engineering, testing
 
-### 2. Fine-Tuned Code Assistant (`code_assistant/`)
-**Complexity: Expert**
+An intelligent code assistant that helps developers:
+- Search codebase semantically
+- Generate code with context
+- Explain complex code
+- Suggest optimizations
+- Detect bugs and security issues
 
-A specialized coding assistant with:
-- LoRA fine-tuning on code datasets
-- 4-bit quantization for efficiency
-- Context-aware code completion
-- RAG over documentation
-- Prompt engineering patterns
-- Latency optimization (<500ms)
+**Use cases:** Developer productivity, code review, documentation
 
-**Covers:** Fine-tuning, LoRA/QLoRA, quantization, RAG, prompt engineering, latency optimization
+### 3. Production Chatbot Platform
+**Complexity:** Expert  
+**Covers:** All sections - complete production system
 
----
+A scalable chatbot platform with:
+- Multi-turn conversations with memory
+- Function calling and tool use
+- Streaming responses
+- A/B testing for prompts
+- Full observability stack
+- Multi-tenant architecture
 
-### 3. Multi-Agent LLM System (`multi_agent_system/`)
-**Complexity: Expert**
+**Use cases:** Customer service, sales, internal tools
 
-An orchestrated multi-agent system for complex tasks:
-- Agent routing and orchestration
-- Specialized agents (research, code, analysis)
-- Shared KV cache across agents
-- Rate-limit aware scheduling
-- RAGAS evaluation framework
-- Privacy-preserving data flows
-
-**Covers:** All concepts - attention mechanisms, RAG, fine-tuning, caching, rate limiting, evaluation, security
-
----
-
-## Setup
+## Running the Projects
 
 Each project has its own README with:
 - Architecture overview
 - Setup instructions
 - Configuration options
-- Usage examples
+- Deployment guide
 - Performance benchmarks
 
-## Running Projects
+## Learning Path
 
-```bash
-cd full_projects/<project_name>
-pip install -r requirements.txt
-cp .env.example .env  # Add your API keys
-python main.py
-```
+1. Start with **Enterprise RAG** to understand retrieval systems
+2. Move to **AI Code Assistant** for specialized applications
+3. Finish with **Production Chatbot** for complete system design
