@@ -1,0 +1,62 @@
+[
+  {
+    "id": "doc_001",
+    "title": "Introduction to Machine Learning",
+    "content": "Machine learning is a subset of artificial intelligence that focuses on building systems that learn from data. Unlike traditional programming where rules are explicitly coded, machine learning algorithms discover patterns in data and make predictions. There are three main types: supervised learning (learning from labeled data), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning through trial and error). Popular applications include image recognition, natural language processing, recommendation systems, and autonomous vehicles. Key algorithms include linear regression, decision trees, neural networks, and support vector machines."
+  },
+  {
+    "id": "doc_002",
+    "title": "Deep Learning Fundamentals",
+    "content": "Deep learning is a specialized branch of machine learning that uses artificial neural networks with multiple layers. These networks are inspired by the structure of the human brain, with interconnected nodes (neurons) that process information. Deep learning excels at processing unstructured data like images, audio, and text. Convolutional Neural Networks (CNNs) are used for computer vision tasks, while Recurrent Neural Networks (RNNs) and Transformers handle sequential data. Training deep learning models requires large datasets and significant computational power, typically using GPUs. Popular frameworks include TensorFlow, PyTorch, and Keras."
+  },
+  {
+    "id": "doc_003",
+    "title": "Natural Language Processing",
+    "content": "Natural Language Processing (NLP) enables computers to understand, interpret, and generate human language. Key NLP tasks include text classification, named entity recognition, sentiment analysis, machine translation, and question answering. Modern NLP relies heavily on transformer models like BERT, GPT, and T5. These models use attention mechanisms to understand context and relationships between words. Word embeddings like Word2Vec and GloVe represent words as dense vectors, capturing semantic meaning. NLP applications include chatbots, virtual assistants, content moderation, and document summarization."
+  },
+  {
+    "id": "doc_004",
+    "title": "Python for Data Science",
+    "content": "Python is the most popular programming language for data science and machine learning. Its simplicity and extensive ecosystem make it ideal for beginners and experts alike. Key libraries include NumPy for numerical computing, Pandas for data manipulation, Matplotlib and Seaborn for visualization, and Scikit-learn for machine learning. Jupyter notebooks provide an interactive environment for data exploration and analysis. Python's readability and vast community support make it the go-to choice for data scientists. Other important libraries include SciPy for scientific computing and Statsmodels for statistical analysis."
+  },
+  {
+    "id": "doc_005",
+    "title": "Data Preprocessing Techniques",
+    "content": "Data preprocessing is a critical step in any machine learning pipeline. It involves cleaning, transforming, and preparing raw data for analysis. Common techniques include handling missing values (imputation or removal), encoding categorical variables (one-hot encoding, label encoding), scaling numerical features (standardization, normalization), and removing outliers. Feature engineering creates new features from existing ones to improve model performance. Data splitting divides the dataset into training, validation, and test sets. Proper preprocessing can significantly impact model accuracy and generalization."
+  },
+  {
+    "id": "doc_006",
+    "title": "Model Evaluation Metrics",
+    "content": "Evaluating machine learning models requires appropriate metrics based on the problem type. For classification, common metrics include accuracy, precision, recall, F1-score, and ROC-AUC. Accuracy measures overall correctness but can be misleading with imbalanced datasets. Precision measures the proportion of true positives among predicted positives, while recall measures the proportion of actual positives correctly identified. For regression, metrics include Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R-squared. Cross-validation provides robust performance estimates by training on multiple data splits."
+  },
+  {
+    "id": "doc_007",
+    "title": "Neural Network Architectures",
+    "content": "Neural networks come in various architectures designed for specific tasks. Feedforward networks are the simplest, with information flowing in one direction. Convolutional Neural Networks (CNNs) use convolutional layers to process grid-like data such as images. Recurrent Neural Networks (RNNs) handle sequential data with loops that maintain state. Long Short-Term Memory (LSTM) networks address the vanishing gradient problem in RNNs. Transformers use self-attention mechanisms and have revolutionized NLP. Generative Adversarial Networks (GANs) consist of generator and discriminator networks competing against each other."
+  },
+  {
+    "id": "doc_008",
+    "title": "Transfer Learning",
+    "content": "Transfer learning leverages knowledge from pre-trained models to solve new tasks with limited data. Instead of training from scratch, you start with a model trained on a large dataset and fine-tune it for your specific task. This approach is particularly effective in computer vision and NLP where pre-trained models like ResNet, VGG, BERT, and GPT are available. Transfer learning reduces training time, requires less data, and often achieves better performance. Common strategies include feature extraction (using pre-trained layers as fixed feature extractors) and fine-tuning (updating pre-trained weights on new data)."
+  },
+  {
+    "id": "doc_009",
+    "title": "Overfitting and Regularization",
+    "content": "Overfitting occurs when a model learns the training data too well, including noise and outliers, resulting in poor generalization to new data. Signs of overfitting include high training accuracy but low validation accuracy. Regularization techniques help prevent overfitting by adding constraints to the model. L1 regularization (Lasso) adds absolute value of weights to the loss function, promoting sparsity. L2 regularization (Ridge) adds squared weights, preventing large weight values. Dropout randomly deactivates neurons during training. Early stopping halts training when validation performance stops improving. Data augmentation artificially increases dataset size."
+  },
+  {
+    "id": "doc_010",
+    "title": "Ensemble Methods",
+    "content": "Ensemble methods combine multiple models to achieve better performance than individual models. Bagging (Bootstrap Aggregating) trains multiple models on different subsets of data and averages predictions. Random Forests use bagging with decision trees, adding randomness in feature selection. Boosting trains models sequentially, with each model focusing on errors of previous ones. Gradient Boosting, XGBoost, and LightGBM are popular boosting algorithms. Stacking combines predictions from multiple models using a meta-learner. Ensemble methods reduce variance, bias, and improve robustness. They often win machine learning competitions."
+  },
+  {
+    "id": "doc_011",
+    "title": "Large Language Models",
+    "content": "Large Language Models (LLMs) are transformer-based models trained on massive text corpora. GPT (Generative Pre-trained Transformer) models use autoregressive generation, predicting the next token given previous tokens. BERT (Bidirectional Encoder Representations from Transformers) uses masked language modeling for bidirectional context. LLMs demonstrate impressive capabilities including text generation, translation, summarization, and question answering. They can perform few-shot and zero-shot learning, adapting to new tasks with minimal examples. Recent models like GPT-4, Claude, and LLaMA have billions of parameters. Fine-tuning and prompt engineering optimize LLM performance for specific tasks."
+  },
+  {
+    "id": "doc_012",
+    "title": "RAG Systems",
+    "content": "Retrieval Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying solely on model parameters, RAG systems retrieve relevant documents from a knowledge base and use them to generate informed responses. The process involves: encoding documents into embeddings, storing them in a vector database, retrieving relevant documents for a query, and generating answers conditioned on retrieved context. RAG reduces hallucinations, enables knowledge updates without retraining, and provides source attribution. Popular vector databases include Pinecone, Weaviate, and Chroma. RAG is essential for building accurate, up-to-date AI assistants."
+  }
+]
