@@ -29,8 +29,8 @@
 
 ### Section 06: Production
 - ✅ easy.py - Content moderation, PII detection, logging
-- ⏳ intermediate.py - TODO
-- ⏳ advanced.py - TODO
+- ✅ intermediate.py - NeMo Guardrails, prompt injection defense (Rebuff)
+- ✅ advanced.py - Observability with OpenTelemetry
 
 ### Section 07: Distributed Training
 - ✅ easy.py - Parallelism strategies, GPU requirements
