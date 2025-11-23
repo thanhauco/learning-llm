@@ -34,7 +34,7 @@
 
 ### Section 07: Distributed Training
 - ✅ easy.py - Parallelism strategies, GPU requirements
-- ⏳ intermediate.py - TODO
+- ✅ intermediate.py - Hands-on Data Parallelism (PyTorch DDP)
 - ⏳ advanced.py - TODO
 
 ### Section 08: Inference Optimization
